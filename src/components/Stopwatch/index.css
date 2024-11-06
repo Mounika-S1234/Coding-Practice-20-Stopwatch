@@ -1,0 +1,79 @@
+/* Write CSS here */
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stopwatch-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.stopwatch-display-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stopwatch-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.stopwatch-time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.stopwatch-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.start-button, .stop-button, .reset-button {
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.start-button {
+  background-color: #1db05f;
+}
+
+.stop-button {
+  background-color: #ef0d36;
+}
+
+.reset-button {
+  background-color: #eaa800;
+}
+
+.start-button:disabled, .stop-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .stopwatch-heading {
+    font-size: 24px;
+  }
+
+  .stopwatch-time {
+    font-size: 32px;
+  }
+
+  .start-button, .stop-button, .reset-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
